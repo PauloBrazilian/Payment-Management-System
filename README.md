@@ -17,6 +17,5 @@ O desenvolvimento será feito no **Nível 1**
 
 ### **1️⃣ Clonar o Repositório**
 ```sh
-git clone https://github.com/seu-usuario/betalent-api.git
-cd betalent-api
+git clone https://github.com/PauloBrazilian/Payment-Management-System.git
 ```
