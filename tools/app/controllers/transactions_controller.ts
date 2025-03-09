@@ -99,4 +99,31 @@ export default class TransactionsController {
       })
     }
   }
+
+  async getAllTransactions({ response }: HttpContext) {
+    try {
+      const transactions = await this.gatewayService.getAllTransactions()
+      return response.status(200).json(transactions)
+    } catch (error) {
+      return response.status(500).json({
+        success: false,
+        message: 'Error fetching transactions',
+        error: error.message,
+      })
+    }
+  }
+
+  async processChargeback({ params, response }: HttpContext) {
+    const { transactionId } = params
+    try {
+      const chargebackResult = await this.gatewayService.processChargeback(transactionId)
+      return response.status(200).json(chargebackResult)
+    } catch (error) {
+      return response.status(500).json({
+        success: false,
+        message: 'Error processing refund',
+        error: error.message,
+      })
+    }
+  }
 }
