@@ -1,21 +1,63 @@
-# Payment-Management-System
+# Payment Management System
 
-## Betalent API - Teste Prático Back-end
+## Betalent API - Back-end Practical Test
 
-## 📌 Visão Geral
-Este projeto é uma API RESTful para um sistema gerenciador de pagamentos multi-gateway, desenvolvido com **AdonisJS** e **MySQL**. A API processa transações utilizando diferentes gateways de pagamento, seguindo uma ordem de prioridade definida. Caso um gateway falhe, a API tenta no próximo até que a transação seja concluída com sucesso.
+### 📌 **Overview**
+This project is a **RESTful API** for a **multi-gateway payment management system**, developed with **AdonisJS** and **MySQL**. The API processes transactions using different **payment gateways**, following a predefined priority order. If one gateway fails, the API will try the next one until the transaction is successfully completed.
 
-O desenvolvimento será feito no **Nível 1**
+Development is being done at **Level 1**.
 
-## 🛠 Tecnologias Utilizadas
-- **AdonisJS 5** (Framework Node.js)
-- **MySQL** (Banco de Dados)
-- **Lucid ORM** (Gerenciamento do Banco)
-- **Docker & Docker Compose**
-- **Testes Automatizados (TDD)**
-- **Autenticação JWT**
+---
 
-### **1️⃣ Clonar o Repositório**
-```sh
+### 🛠 **Technologies Used**
+- **AdonisJS 5** – Node.js Framework
+- **MySQL** – Database
+- **Lucid ORM** – Database Management
+- **JavaScript** – Programming Language
+- **TypeScript** – Superset of JavaScript
+- **Node.js** – JavaScript Runtime
+- **Microservices** – Architecture Style
+
+---
+
+### **📥 1️⃣ Clone the Repository**
+
+```bash
 git clone https://github.com/PauloBrazilian/Payment-Management-System.git
 ```
+
+Then, install the dependencies with:
+
+```bash
+npm install
+```
+
+Navigate to the project folder:
+
+```bash
+cd <folder-name>
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+---
+
+### **📦 2️⃣ Clone the Postman**
+
+You can import the Postman collection using the following links:
+
+- [**Postman Collection**](./Payment-Management-System.postman_collection.json)
+- [**Postman Environment**](./Payment-Management-System.postman_environment.json)
+
+These files will help you test and interact with the APIs directly via Postman.
+
+---
+
+### **📈 Tests and Environment**
+
+- Ensure that you have correctly set up the development environment with the necessary variables.
+- Use the Postman files to test the endpoints and simulate transactions.
