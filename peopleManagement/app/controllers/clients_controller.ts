@@ -24,7 +24,7 @@ export default class ClientsController {
   }
 
   async showEmail({ params, response }: HttpContext) {
-    const client = await this.clientService.getById(params.email)
+    const client = await this.clientService.getByEmail(params.email)
     return response.ok(client)
   }
 
