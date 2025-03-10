@@ -1,5 +1,5 @@
 export enum Status {
-  PENDING,
-  SUCCESS,
-  FAILED,
+  PENDING = 'PENDING',
+  SUCCESS = 'SUCCESS',
+  FAILED = 'FAILED',
 }

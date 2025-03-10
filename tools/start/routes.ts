@@ -6,5 +6,7 @@ router
   .group(() => {
     router.post('/', [transactionsController, 'createTransaction'])
     router.post('/cart', [transactionsController, 'createCart'])
+    router.post('/:transactionId/chargeback', [transactionsController, 'processChargeback'])
+    router.get('/', [transactionsController, 'getAllTransactions'])
   })
   .prefix('/tools')
